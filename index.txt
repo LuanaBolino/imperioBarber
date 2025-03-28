@@ -1,0 +1,42 @@
+      <section class="section center" id="contato">
+        <div class="container">
+          <h2>Entre em contato com a gente!</h2>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="nome" type="text" class="validate">
+                  <label for="nome">Nome</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="sobrenome" type="text" class="validate">
+                  <label for="sobrenome">Sobrenome</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="assunto" type="text" class="validate">
+                  <label for="assunto">Assunto</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="mensagem" class="materialize-textarea"></textarea>
+                      <label for="mensagem">Mensagem</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+                    
+            <button class="btn transparent btn-white-trasnparent">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,344 @@
+:root{
+    --cor1: #C8A165;
+    --cor2: #F6F6F6;
+    --cor3: #424242;
+    --cor4: black;
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor2);
+    overflow-x: hidden;
+}
+
+.btn-dourado{
+    background-color: var(--cor1);
+}
+
+.btn-dourado:hover{
+    background-color: #887457;
+}
+
+.btn-white-trasnparent{
+  border: 1px solid var(--cor2);
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.btn-white-trasnparent:hover{
+  background-color: white !important;
+  color: black;
+}
+
+/*TEXTOS--------------*/
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(3.125rem, 2.5893rem + 2.6786vw, 5rem);
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(1.875rem, 1.5179rem + 1.7857vw, 3.125rem);
+    margin-bottom: 50px;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5625rem);
+}
+
+.logo{
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-size{
+    margin: 80px auto;
+}
+
+
+/*HEADER-----------------------------------------*/
+
+.nav-scroll {
+    background-color: var(--cor4) !important;
+    transition: background-color 0.5s ease;
+  }
+
+.parallax-container {
+    height: 500px;
+    position: relative;
+  }
+  
+  .texto-parallax {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /*QUEM SOMOS NÓS----------------------------------------------*/
+
+  .gold-card {
+    background-color: var(--cor1);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  .gold-card .card-title {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .gold-card i {
+    color: #fff;
+  }
+
+  .card.equal-height {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-white{
+    background-color: var(--cor2);
+    box-shadow: none;
+  }
+
+  /*SERVIÇOS---------------------------------------------------*/
+
+  .background-servicos{
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--cor1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .background-servicos:hover{
+    transform: scale(1.01);
+  }
+
+  .corte-card{
+    background-image: url(../images/servicos/corte.png);
+  }
+
+  .escova-card{
+    background-image: url(../images/servicos/progressiva.png);
+  }
+  
+  .navalha-card{
+    background-image: url(../images/servicos/navalha.png);
+  }
+
+  .barba-card{
+    background-image: url(../images/servicos/barba.png);
+  }
+
+  .corteBarba-card{
+    background-image: url(../images/servicos/corteBarba.png);
+  }
+
+  .sobrancelha-card{
+    background-image: url(../images/servicos/sobrancelha.png);
+  }
+  /*PRODUTOS------------------------------------*/
+
+  .produtos > h2{
+    margin-bottom: 20px;
+  }
+
+   /*NOSSAS UNIDADES----------------------------*/
+
+   .unidade{
+    border: 2px solid var(--cor1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 80%;
+    padding: 20px 50px;
+    margin:  80px auto;
+   }
+
+   .unidade-title{
+    display: flex;
+    align-items: center;
+   }
+
+   .hr-title{
+    height: 2px;
+    background-color: var(--cor3);
+    width: 20%;
+   }
+
+   .unidade-container{
+    padding-bottom: 40px;
+    margin: auto;
+   }
+
+   .unidade-container > h3{
+    text-decoration: underline;
+    color: var(--cor3);
+   }
+
+
+   .endereco-horario{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+   }
+
+   p{
+    margin: 0px;
+   }
+
+   .mapa{
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    
+    
+   }
+
+   @media screen and (max-width: 1300px){
+    .unidade{
+      padding: 0px;
+      max-width: 70%;
+    }
+    
+    .unidade-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
+    
+    .endereco-horario{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .endereco > .social{
+      justify-content: center;
+    }
+    .mapa{
+    width: 80%;
+    }
+
+   }
+
+   @media screen and (max-width: 1450px) {
+    .unidade{
+      max-width: 90%;
+    }
+
+    .mapa{
+      width: 230px;
+    }
+   }
+
+   /*CONTATO*/
+
+   #contato{
+    background-image: url(../images/servicos/produtos.png);
+    color: var(--cor2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+   }
+
+     /* label color */
+     .input-field label {
+      color: var(--cor1) !important;
+    }
+    /* label focus color */
+    .input-field input[type=text]:focus + label {
+      color: var(--cor1) !important;
+    }
+    
+    /* label underline focus color */
+    .input-field input[type=text]:focus {
+      border-bottom: 1px solid var(--cor1) !important;
+      box-shadow: 0 1px 0 0 var(--cor1) !important;
+    }
+    /* valid color */
+    .input-field input[type=text].valid {
+      border-bottom: 1px solid var(--cor1) !important;
+      box-shadow: 0 1px 0 0 var(--cor1) !important;
+    }
+    /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: var(--cor1) !important;
+    }
+
+    .materialize-textarea{
+      color: var(--cor1) !important;
+      border-bottom: 1px solid var(--cor1) !important;
+      box-shadow: 0 1px 0 0 var(--cor1) !important;
+    }
+
+      /* label focus color */
+      .input-field input[type=email]:focus + label {
+        color: var(--cor1) !important;
+      }
+      
+      /* label underline focus color */
+      .input-field input[type=email]:focus {
+        border-bottom: 1px solid var(--cor1) !important;
+        box-shadow: 0 1px 0 0 var(--cor1) !important;
+      }
+      /* valid color */
+      .input-field input[type=email].valid {
+        border-bottom: 1px solid var(--cor1) !important;
+        box-shadow: 0 1px 0 0 var(--cor1) !important;
+      }
+      /* icon prefix focus color */
+      .input-field .prefix.active {
+        color: var(--cor1) !important;
+      }
+  
+      .materialize-textarea{
+        color: var(--cor1) !important;
+        border-bottom: 1px solid var(--cor1) !important;
+        box-shadow: 0 1px 0 0 var(--cor1) !important;
+      }
+
+      
+   .btn-enviar{
+    border: 1px solid var(--cor3);
+    color: black;
+    background-color: var(--cor2);
+   }
+
+   .btn-enviar:hover{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: 1px solid var(--cor1);
+   }
+
+/*Footer---------------------------------*/
+
+  footer{
+    background-color: var(--cor1) !important;
+  }
+
+  .social{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
